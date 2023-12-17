@@ -139,7 +139,7 @@ p {
 }
 
 .card__annually {
-    display: flex;
+    display: none;
     align-items: center;
     font-size: 4.3rem;
     padding-top: 0.25em;
@@ -149,7 +149,7 @@ p {
 }
 
 .card__monthly {
-    display: none;
+    display: flex;
     align-items: center;
     font-size: 4.3rem;
     padding-top: 0.25em;
@@ -158,7 +158,7 @@ p {
 }
 
 .card__annually-middle {
-    display: flex;
+    display: none;
     align-items: center;
     font-size: 4.3rem;
     padding-top: 0.25em;
@@ -168,7 +168,7 @@ p {
 }
 
 .card__monthly-middle {
-    display: none;
+    display: flex;
     align-items: center;
     font-size: 4.3rem;
     padding-top: 0.25em;
