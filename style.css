@@ -1,0 +1,331 @@
+/*** RESET ***/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/*** main css ***/
+
+
+:root {
+    --clr-Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+    --clr-Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --clr-Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --clr-Grayish-Blue: hsl(233, 13%, 49%);
+    --clr-Dark-Grayish-Blue: hsl(232, 13%, 33%);
+    --fw700: 700;
+    --ff-monteserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 0.938rem;
+    font-family: var(--ff-monteserrat);
+    font-weight: var(--fw700);
+    color: var(--clr-Grayish-Blue);
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 23.438rem;
+    margin: 0 auto;
+    background: url("./images/bg-top.svg"), var(--clr-Very-Light-Grayish-Blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 194px;
+    background-position-y: -36px;
+    padding: 4em 1em;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.3em;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-top: 0.12em;
+    margin-bottom: 1.25em;
+}
+
+.header__period {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 76%;
+    font-size: 0.95rem;
+    margin-bottom: 2.1em;
+    color: var(--clr-Light-Grayish-Blue);
+}
+
+
+.toggle-A {
+    width: 3.5rem;
+    height: 2rem;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.toggle-M {
+    width: 3.5rem;
+    height: 2rem;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.toggle__circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--clr-Very-Light-Grayish-Blue);
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.toggle:hover,
+.toggle:focus {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.toggle__circle:hover,
+.toggle__circle:focus {
+    cursor: pointer;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.card__annually {
+    display: flex;
+    align-items: center;
+    font-size: 4.3rem;
+    padding-top: 0.25em;
+    padding-bottom: 0.32em;
+    justify-content: center;
+    color: var(--clr-Dark-Grayish-Blue);
+}
+
+.card__monthly {
+    display: none;
+    align-items: center;
+    font-size: 4.3rem;
+    padding-top: 0.25em;
+    padding-bottom: 0.32em;
+    color: var(--clr-Dark-Grayish-Blue);
+}
+
+.card__annually-middle {
+    display: flex;
+    align-items: center;
+    font-size: 4.3rem;
+    padding-top: 0.25em;
+    padding-bottom: 0.32em;
+    justify-content: center;
+    color: var(--clr-Very-Light-Grayish-Blue);
+}
+
+.card__monthly-middle {
+    display: none;
+    align-items: center;
+    font-size: 4.3rem;
+    padding-top: 0.25em;
+    padding-bottom: 0.32em;
+    justify-content: center;
+    color: var(--clr-Very-Light-Grayish-Blue);
+}
+
+.dollar {
+    font-size: 2.5rem;
+    margin-right: 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    padding: 2.65em 0 2.05em 0;
+}
+
+.middle {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: var(--clr-Very-Light-Grayish-Blue);
+}
+
+
+
+.card h3 {
+    font-size: 1.2rem;
+}
+
+.card ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-line {
+    border-bottom: 1px solid var(--clr-Light-Grayish-Blue);
+    width: 80%;
+    text-align: center;
+}
+
+.card-line-middle {
+    border-bottom: 1px solid var(--clr-Light-Grayish-Blue);
+    width: 80%;
+    text-align: center;
+}
+
+.card ul li {
+    line-height: 3.45em;
+    width: 100%;
+    text-align: center;
+}
+
+.card__btn {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: var(--clr-Very-Light-Grayish-Blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.card__btn:hover,
+.card__btn:focus {
+    background: transparent;
+    border: 1px solid var(--clr-Grayish-Blue);
+    color: hsl(237, 63%, 64%);
+    margin-top: 1.875rem;
+    cursor: pointer;
+}
+
+.middle-btn {
+    background: var(--clr-Very-Light-Grayish-Blue);
+    color: hsl(237, 63%, 64%);
+}
+
+.middle-btn:hover,
+.middle-btn:focus {
+    background: transparent;
+    color: var(--clr-Very-Light-Grayish-Blue);
+    border: 1px solid var(--clr-Very-Light-Grayish-Blue);
+}
+
+.footer {
+    margin-top: 5rem;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width:1024px) {
+    .container {
+        width: 90rem;
+        margin: 0 auto;
+        background: url("./images/bg-top.svg") right top, url("./images/bg-bottom.svg") left bottom, var(--clr-Very-Light-Grayish-Blue);
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding: 4em 1em;
+    }
+
+    .header {
+        margin-top: 0.5rem;
+        margin-bottom: 2.2em;
+    }
+
+    .header__period {
+        width: 20%;
+    }
+
+    .main {
+        flex-direction: row;
+        padding: 0 12em;
+    }
+
+    .card {
+        width: 60%;
+        padding-top: 2.1em;
+        flex-shrink: 1;
+    }
+
+    .card__annually,
+    .card__monthly {
+        padding-bottom: 0.35em;
+
+    }
+
+    .card h3 {
+        margin-top: 0;
+        margin-bottom: 0.2em;
+    }
+
+    .card-line {
+        _margin-top: 2px;
+    }
+
+    .middle {
+        padding: 3.8em 0;
+    }
+}
