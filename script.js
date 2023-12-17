@@ -1,7 +1,7 @@
 $(function(){
 
     $('#toggle').on('click', function(e) {
-        $('.toggle-A').toggleClass("toggle-M"); //you can list several class names 
+        $('.toggle-A').toggleClass("toggle-M");
         
             $(".card__monthly").toggle()
             $(".card__monthly-middle").toggle()
